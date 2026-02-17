@@ -167,6 +167,20 @@ It should return:
 
 Then use it three times inside `App`.
 
+const Message = () => {
+  return <h3>React is fun!</h3>;
+};
+
+function App(){
+  return (
+    <dvi>
+    <Message />
+    <Message />
+    <Message />
+    </div>
+  );
+};
+
 ---
 
 ## 10.
@@ -176,6 +190,17 @@ It should return:
 
 Use it two times inside `App`.
 
+const Box = () => {
+  return <div>Simple box</div>;
+};
+
+function App(){
+  return {
+    <div>
+     <box />
+    </div>
+  };
+};
 ---
 
 ## 11.
@@ -185,6 +210,18 @@ It should return:
 
 Use it inside `App`.
 
+const Header = () => {
+  return <h1>Welcome to My App</h1>
+};
+
+function App(){
+  return (
+    <div>
+     <header />
+    </div>
+  );
+};
+
 ---
 
 ## 12.
@@ -193,6 +230,19 @@ It should return:
 <p>This is the main content.</p>
 
 Render it below `Header` inside `App`.
+
+const Content = () => {
+  return <p>This is the main content.</p>;
+};
+
+function App(){
+  return (
+    <div>
+     <header />
+     <Content />
+    </div>
+  );
+};
 
 ---
 
@@ -205,6 +255,22 @@ It should return:
 
 Render `Layout` inside `App`.
 
+const Layout = () => {
+  return (
+    <div>
+      <h2>Layout Section</h2>
+    </div>
+  );
+};
+
+function App(){
+  return (
+    <div>
+     <Layout />
+    </div>
+  );
+};
+
 ---
 
 ## 14.
@@ -214,6 +280,22 @@ Create two components:
 
 Render both inside `App`.
 
+const Navbar = () => {
+  return <h1>Navbar</h1>;
+};
+
+const Mainsection = () => {
+  return <h1>Mainsection</h1>;
+};
+
+function App(){
+  return (
+    <div>
+    <Navbar />
+    <Mainsection />
+    </div>
+  );
+};
 ---
 
 ## 15.
