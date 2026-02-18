@@ -187,18 +187,50 @@ PROPS PRACTICE – 20 TASKS
    - lastName
    Display full name together.
 
+   const Greeting = ({firstName, lastName}) => {
+    return <h3> {firstName} {lastName}</h3>
+   };
+
+   function App(){
+    return <Greeting firstName="Aditya" lastName="Aditya" />
+   };
+
 10. Create a component called Status that receives a status prop
     and displays:
     Status: {status}
+
+    const Status = ({checkStatus}) => {
+      return <h3> Status: {checkStatus} </h3>
+    };
+
+    function App(){
+      return <Status checkStatus="True" />
+    };
 
 11. Create a component called Book that receives:
     - title
     - author
     Render both clearly.
 
+    const Book = ({title, author}) => {
+      return <h3>{title} book author is {author}</h3>
+    };
+
+    function App(){
+      return <Book title="Girl on Fire" author="Chetan Bhagat" />
+    };
+
 12. Create a component called PriceTag that receives a price prop
     and displays:
     $ {price}
+
+    const PriceTag = ({price}) => {
+      return <h3> ${price} </h3>
+    };
+
+    function App(){
+      return <PriceTag price={50} />
+    };
 
 13. Create a component called Profile that receives:
     - username
