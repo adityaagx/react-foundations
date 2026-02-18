@@ -120,18 +120,67 @@ PROPS PRACTICE – 20 TASKS
 5. Create a component called Message that receives a text prop
    and renders it inside a paragraph.
 
+   const Message = ({text}) => {
+    return (
+      <p>{text}</p>
+    );
+   };
 
+   function App (){
+    return (
+      <Message text="Hello World />
+    );
+   };
 
 6. Create a component called Button that receives a label prop
    and displays it inside a button element.
 
+   const Button = ({label}) => {
+    return (
+      <button>{label}</button>
+    );
+   };
+
+   function App(){
+    return (
+      <Button label="Black dog" />
+    );
+   };
+
 7. Create a component called Avatar that receives an imageUrl prop
    and uses it inside an img tag.
+
+   const Avatar = ({imgurl}) => {
+    return (
+      <img src={imgurl} />
+    );
+   };
+
+   function App(){
+    return (
+      <Avatar imgurl="dodo.png" />
+    );
+   };
 
 8. Create a component called Student that receives:
    - name
    - grade
    Show both values in separate elements.
+
+   const Student = ({name, grade}) => {
+    return (
+      <div>
+       <h3>{name}</h3>
+       <p>{grade}</p>
+      </div>
+    );
+   };
+
+   function App(){
+    return (
+      <Student name="Aditya" grade={12} />
+    );
+   };
 
 9. Create a component called Greeting that receives:
    - firstName
