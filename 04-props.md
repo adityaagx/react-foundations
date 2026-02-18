@@ -237,21 +237,66 @@ PROPS PRACTICE – 20 TASKS
     - bio
     Show them inside a div.
 
+    const Profile = ({username, bio}) => {
+      return (
+        <div>
+         <h3>{username}</h3>
+         <h3>{bio}</h3>
+        </div>
+      );
+    };
+
+    function App(){
+      return <Profile username="Aditya" bio="Hello World" />
+    };
+
 14. Create a component called Country that receives a country prop
     and displays:
     Country: {country}
+
+    const Country = ({country}) => {
+      return <h3>Country:{country}</h3>
+    };
+
+    function App(){
+      return <Country country="India" />
+    };
 
 15. Create a component called Score that receives a score prop
     and displays:
     Your score is {score}
 
+    const Score = ({score}) => {
+      return <h3> Your score is {score}</h3>
+    };
+
+    function App(){
+      return <Score score={21} />
+    };
+
 16. Create a component called Header that receives a title prop
     and renders it inside an h1.
+
+    const Header = ({title}) => {
+      return <h1>{title}</h1>
+    };
+
+    function App(){
+      return <Header title="React practice" />
+    };
 
 17. Create a component called Car that receives:
     - brand
     - model
     Display: {brand} {model}
+
+    const Car = ({brand, model}) => {
+      return <h2> Display: {brand} {model} </h2>
+    };
+
+    function App(){
+      return <Car brand="Tata" model="Harrier" /> 
+    };
 
 18. Create a component called Email that receives an email prop
     and displays it inside a paragraph.
